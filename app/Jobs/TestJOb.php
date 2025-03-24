@@ -10,12 +10,16 @@ class TestJOb implements ShouldQueue
 {
     use Queueable;
 
+
+    public $jobId;
+
     /**
      * Create a new job instance.
      */
     public function __construct()
     {
-        //
+        
+        $this->jobId = uniqid();
     }
 
     /**
