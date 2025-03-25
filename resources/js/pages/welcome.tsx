@@ -20,6 +20,10 @@ export default function Welcome() {
             // router.reload()
         }) 
 
+        return ()=>{
+            window.Echo.leaveChannel("facts")
+        }
+
 
     },[])
     
