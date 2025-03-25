@@ -15,7 +15,8 @@ export default function Welcome() {
 
             const f =event.factText;
 
-            setAllFacts((prevFacts)=>[f,...prevFacts])
+            // setAllFacts((prevFacts)=>[f,...prevFacts])
+            router.reload()
         }) 
 
 
